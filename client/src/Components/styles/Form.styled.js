@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 export const StyledForm = styled.form`
-    width: 50%;
+    width: 60%;
+    padding: 30px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-self: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
 `
 
 export const StyledLabel = styled.label`

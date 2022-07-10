@@ -1,0 +1,25 @@
+
+{
+    "schedule": {
+    "sunday": {
+        "geolocation": {
+            "lat": "41.694876",
+            "lng": "-71.170295"
+        }
+    },
+    "monday": {
+        "geolcation": {
+            "lat": "41.701963",
+            "lng": "-71.170295"
+        }
+    },
+    "tuesday": {
+        "geolcation": {
+            "lat": "",
+            "lng": ""
+        }
+    }
+
+}
+
+}

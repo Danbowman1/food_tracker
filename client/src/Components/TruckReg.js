@@ -4,25 +4,23 @@ import { Container } from '../Components/styles/Container.styled'
 import { StyledForm, StyledInput, StyledLabel } from './styles/Form.styled'
 import { Button } from './styles/Button.styled'
 
-function Signup() {
-    const usernameRef = useRef()
-    const emailRef = useRef()
+const TruckReg = () => {
+    const truckNameRef = useRef()
+    const truckIdRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
 
-
-
     return (
-        <>
+        <div>
             <Container>
                 <StyledForm style={{marginTop:'60px'}}>
-                <h1 style={{textAlign:'center', margin:'0 0 40px 0', opacity:'65%'}}>Sign Up</h1>
-                    <StyledLabel>Username</StyledLabel>
-                    <StyledInput type='text' ref={usernameRef}
+                <h1 style={{textAlign:'center', margin:'0 0 40px 0', opacity:'65%'}}>Register Truck</h1>
+                    <StyledLabel>Truck Name</StyledLabel>
+                    <StyledInput type='text' ref={truckNameRef}
                     // placeholder='Username'
                     />
-                    <StyledLabel>Email</StyledLabel>
-                    <StyledInput type='text' ref={emailRef}
+                    <StyledLabel>Truck ID</StyledLabel>
+                    <StyledInput type='text' ref={truckIdRef}
                     // placeholder='Username'
                     />
                     <StyledLabel>Password</StyledLabel>
@@ -33,13 +31,14 @@ function Signup() {
                     <StyledInput type='password' ref={passwordConfirmRef}
                     // placeholder='Confirm Password'
                     />
-                    <Button bg='#65ACA8' color='#fff'>Sign Up</Button>
+                    <Button bg='#65ACA8' color='#fff'>Register</Button>
                 </StyledForm>
-                <div style={{textAlign:'center', marginTop:'20px', opacity:'65%'}}>Already have an account? <a href="#">Login</a></div>
-                <div style={{textAlign:'center', marginTop:'20px', opacity:'65%'}}>Own a Truck? <Link to={'/registration/truck'}>Register</Link></div>
+                <div style={{textAlign:'center', marginTop:'20px', opacity:'65%'}}>Already Registered <Link to={'/registration/truck'}>Login</Link></div>
+                <div style={{textAlign:'center', marginTop:'20px', opacity:'65%'}}>Wait I don't belong here! <Link to={'/'}>Sign up</Link></div>
+                
             </Container>
-        </>
+        </div>
     )
 }
 
-export default Signup
+export default TruckReg

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px;
     border-radius: 5px;
     border: none;
     background: ${({bg}) => bg || '#fff'};
@@ -12,7 +12,7 @@ export const Button = styled.button`
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     &:hover {
-        opacity: 95%;
-        
+        filter: brightness(0.96);
+        transform: scale(0.985);
     }
 `
