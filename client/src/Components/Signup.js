@@ -14,8 +14,8 @@ function Signup() {
 
     return (
         <>
-            <Container>
-                <StyledForm style={{marginTop:'60px'}}>
+            <Container style={{alignContent: 'center'}}>
+                <StyledForm style={{marginTop:'240px'}}>
                 <h1 style={{textAlign:'center', margin:'0 0 40px 0', opacity:'65%'}}>Sign Up</h1>
                     <StyledLabel>Username</StyledLabel>
                     <StyledInput type='text' ref={usernameRef}
