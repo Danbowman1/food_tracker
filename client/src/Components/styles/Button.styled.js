@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-    width: 100%;
+    width: ${({width}) => width || '100%'};
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: none;
     background: ${({bg}) => bg || '#fff'};
     color: ${({color}) => color};

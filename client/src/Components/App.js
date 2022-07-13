@@ -3,6 +3,9 @@ import Signup from './Signup';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/Global';
 import TruckReg from './TruckReg';
+import Navbar from './Navbar';
+import Recipe from '../Views/Recipe';
+
 
 
 const theme = {
@@ -10,7 +13,7 @@ const theme = {
     primary: '#65ACA8',
     secondary: '#BC5528',
     other: '#13637C',
-    bg: '#F4E7CA'
+    bg: '#fff'
   }
 }
 
@@ -22,7 +25,8 @@ function App() {
           <GlobalStyles />
           <Routes>
             <Route path='/' element={<Signup/>}/>
-            <Route path='/registration/truck' element={<TruckReg/>}/>
+            <Route path='/signup' element={<TruckReg/>}/>
+            <Route path='/recipe' element={<Recipe/>}/>
           </Routes>
           
         </>

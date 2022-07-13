@@ -10,7 +10,7 @@ export const StyledForm = styled.form`
     justify-self: center;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background: #fff;
+    background: #F1F1F0;
 `
 
 export const StyledLabel = styled.label`
@@ -18,12 +18,11 @@ export const StyledLabel = styled.label`
 `
 
 export const StyledInput = styled.input`
-    width: 100%;
+    width: ${({width}) => width || '100%'};
     padding: 12px 14px;
-    margin: 10px 0 20px 0;
     border: none;
     border: 1px solid #DDDDDD;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
     &::placeholder {
