@@ -1,3 +1,0 @@
-##Dependencies
-*Firebase
-*styled-components
